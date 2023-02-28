@@ -1,0 +1,156 @@
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background:url(/image/fond.jpeg)
+}
+
+header{
+    height: 100px;
+    height: 6.25rem;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: #c0c0c0 1px solid;
+}
+
+.logo{
+    /* height: 50px; */
+    width: 30%;
+    margin-left: 25px;
+}
+
+.logo:hover{
+    filter:brightness(0.5);
+}
+
+nav{
+    width: 50%;
+    margin-right: 3% ;
+   
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+    transition: 0.3s;
+    white-space : nowrap;
+}
+
+nav a:hover{
+    color: #d9d9d9;
+    border-bottom: 2px solid #f9f9f9;
+    transition: 0.3s;
+}
+
+.sous-menu{
+    display: none;
+    box-shadow: 0px 1px 2px #C0C0C0;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    z-index: 500;
+}
+nav > ul li:hover .sous-menu{
+    display: block;
+    transition: 1s;
+}
+.sous-menu li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous-menu a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous-menu a:hover{
+    border-bottom: none;
+    background-color: #c9c9c9;
+    transition: 0.3s;
+}
+.depliant > a::after{
+    content:" ⬥";
+    font-size: 14px;
+}
+
+
+
+
+
+.sous-menu2 li  {
+    display: none;
+}
+
+.depliant2:hover .sous-menu2 li {
+    display: block;
+}
+
+.depliant2 > a::after{
+    content:" ▼";
+    font-size: 14px;
+}
+
+.sous-menu2 a{
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous-menu2 a:hover{
+    border-bottom: none;
+    background-color:#090909;
+    transition: 0.3s;
+}
+
+.sous-menu2{
+    display: none;
+    box-shadow: 0px 1px 2px #C0C0C0;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sous-menu2{
+    display: block;
+    transition: 1s;
+    left: 150px;
+    top: 0px
+}
+
+.sous-menu2 li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}

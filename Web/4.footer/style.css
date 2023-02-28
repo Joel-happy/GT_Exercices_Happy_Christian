@@ -1,0 +1,89 @@
+footer {
+    background-color: #d5d5d5;
+    color: #f2f2f2;
+    padding: 50px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+
+.pied {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+    width: 10%;
+}
+
+.liens {
+    flex: 2;
+}
+
+.liens1 {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.liens1, .liens2 {
+    flex: 1;
+    padding: 0 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.liens1 a, .liens2 a {
+    display: block;
+    margin-bottom: 10px;
+    color: #d8d8d8;
+    text-decoration: none;
+}
+
+.liens1 a:hover, .liens2 a:hover {
+    text-decoration: underline;
+}
+
+.liens1 i, .liens2 i {
+    margin-right: 10px;
+}
+
+.liens1 i {
+    color: #d8d8d8;
+}
+
+.liens1 i:hover {
+    color: #1DB954;
+}
+
+.liens2 li {
+    list-style-type: none;
+}
+
+.liens1 li a {
+    display: block;
+    margin-bottom: 10px;
+    color: #d8d8d8;
+    text-decoration: none;
+}
+
+.liens1 li a:hover {
+    text-decoration: underline;
+}
+
+.liens1 h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
