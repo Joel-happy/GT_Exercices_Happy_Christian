@@ -10,14 +10,13 @@ func main() {
 	var choixUtilisateur int
 
 	for {
-		fmt.Println("Menu:\n
-		1. Récupérer tout le texte contenu dans un fichier\n
-		2. Ajouter du texte dans un fichier\n
-		3. Supprimer tout le contenu d'un fichier\n
-		4. Remplacer le contenu d'un fichier par du texte donné par l'utilisateur\n
-		5. Quitter")
-
-		fmt.Print("Entrez votre choixUtilisateur: ")
+		fmt.Println("Menu:")
+		fmt.Println("1. Récupérer tout le texte contenu dans un fichier")
+		fmt.Println("2. Ajouter du texte dans un fichier")
+		fmt.Println("3. Supprimer tout le contenu d'un fichier")
+		fmt.Println("4. Remplacer le contenu d'un fichier par du texte donné par l'utilisateur")
+		fmt.Println("5. Quitter")
+		fmt.Print("Que voulez vous faire: ")
 		fmt.Scan(&choixUtilisateur)
 
 		switch choixUtilisateur {
